@@ -53,5 +53,5 @@ const downloadImage = async (url, image_path) => {
   await response.data
           .pipe(fs.createWriteStream(image_path));
 };
-app.listen(3000);
+// app.listen(3000);
 module.exports.handler = serverless(app);
