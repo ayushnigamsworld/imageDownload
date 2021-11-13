@@ -1,0 +1,15 @@
+org: ayushnigam
+app: test1
+service: test2
+frameworkVersion: '2 || 3'
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  lambdaHashingVersion: '20201221'
+
+functions:
+  api:
+    handler: handler.handler
+    events:
+      - httpApi: '*'
